@@ -1,4 +1,4 @@
-Below you will find some information on how to perform common tasks.  
+Below you will find some information on how to perform common tasks.
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).
 
 ## Sending Feedback
@@ -13,7 +13,7 @@ After creation, your project should look like this:
 my-app/
   README.md
   index.html
-  favicon.ico
+  favicon.png
   node_modules/
   package.json
   src/
@@ -21,21 +21,20 @@ my-app/
     App.js
     index.css
     index.js
-    logo.svg
 ```
 
 For the project to build, **these files must exist with exact filenames**:
 
 * `index.html` is the page template;
-* `favicon.ico` is the icon you see in the browser tab;
+* `favicon.png` is the icon you see in the browser tab;
 * `src/index.js` is the JavaScript entry point.
 
 You can delete or rename the other files.
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.  
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.
 You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
 
-You can, however, create more top-level directories.  
+You can, however, create more top-level directories.
 They will not be included in the production build so you can use them for things like documentation.
 
 >**Known Issue:**
@@ -84,7 +83,7 @@ npm install --save <library-name>
 
 ### Import a Component
 
-This project setup supports ES6 modules thanks to Babel.  
+This project setup supports ES6 modules thanks to Babel.
 While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
 
 For example:
@@ -239,7 +238,7 @@ Some editors, including Sublime Text, Atom, and Visual Studio Code, provide plug
 
 They are not required for linting. You should still the linter output right in your terminal as well as the browser console. However, if you prefer the lint results to appear right in your editor, there are some extra steps you can do.
 
-You would need to install an ESLint plugin for your editor first.  
+You would need to install an ESLint plugin for your editor first.
 Then make sure `package.json` of your project ends with this block:
 
 ```js
@@ -251,7 +250,7 @@ Then make sure `package.json` of your project ends with this block:
 }
 ```
 
-Projects generated with `react-scripts@0.2.0` and higher should already have it.  
+Projects generated with `react-scripts@0.2.0` and higher should already have it.
 If you don’t need ESLint integration with your editor, you can safely delete those three lines from your `package.json`.
 
 Finally, you will need to install some packages *globally*:
@@ -276,10 +275,6 @@ node_modules/fbjs/lib/Deferred.js.flow:60
 node_modules/fbjs/lib/shallowEqual.js.flow:29
  29:     return x !== 0 || 1 / (x: $FlowIssue) === 1 / (y: $FlowIssue);
                                    ^^^^^^^^^^ identifier `$FlowIssue`. Could not resolve name
-
-src/App.js:3
-  3: import logo from './logo.svg';
-                      ^^^^^^^^^^^^ ./logo.svg. Required module not found
 
 src/App.js:4
   4: import './App.css';
